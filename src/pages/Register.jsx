@@ -26,9 +26,16 @@ const toastOptions = {
 }
   const handleValidation = () => {
     const { password, confirmPassword, username, email } = values;
-    if (password !== confirmPassword){
+    if (password.length < 3 || password === ''){
       toast.error(
-        'password and confirm password did not match',
+        'Password is to short',
+        toastOptions
+      )
+      return false
+
+    } else if (password !== confirmPassword){
+      toast.error(
+        'Password does not match with confirm password',
         toastOptions
       )
       return false
@@ -41,13 +48,6 @@ const toastOptions = {
     } else if (email === ''){
       toast.error(
         'Emails is required',
-        toastOptions
-      )
-      return false
-    }
-    if (password.length < 3){
-      toast.error(
-        'Password is too short',
         toastOptions
       )
       return false
