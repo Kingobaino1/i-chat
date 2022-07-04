@@ -1,4 +1,4 @@
-const host = 'http://localhost:4000';
+const host = 'https://i-chat-kings.herokuapp.com';
 
 const RegisterRoute = `${host}/api/auth/register`;
 const LoginRoute = `${host}/api/auth/login`;
