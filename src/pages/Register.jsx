@@ -44,7 +44,8 @@ const toastOptions = {
         toastOptions
       )
       return false
-    } else if (password.length < 3){
+    }
+    if (password.length < 3){
       toast.error(
         'Password is too short',
         toastOptions
