@@ -73,7 +73,6 @@ const ChatContainer = ({ currentChat, currentUser, socket }) => {
             </div>
             <Logout />
           </div>
-          {/* <Messages /> */}
           <div className="chat-messages">
             {
               messages.map((message, index) => {
