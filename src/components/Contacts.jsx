@@ -141,17 +141,18 @@ const Container = styled.div`
         color: white;
       }
     }
-    @media screen and (min-width: 720px) and (max-width: 1080px){
-      gap: 0.5rem;
-      .username {
-        font-size: 1rem;
-      }
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 1080px){
+    gap: 0.5rem;
+    .username {
+      font-size: 1rem;
     }
-    @media screen and (min-width: 390px) and (max-width: 720px){
-      gap: 0.5rem;
-      .username {
-        font-size: 1rem;
-      }
+  }
+  @media screen and (min-width: 390px) and (max-width: 720px){
+    gap: 0.5rem;
+    .username {
+      font-size: 1rem;
     }
   }
 `;

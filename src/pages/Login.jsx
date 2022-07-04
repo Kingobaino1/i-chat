@@ -7,7 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import * as routes from '../utils/APIRoutes';
 
-
 const Login = () => {
   const navigate = useNavigate();
   const [values, setValues] = useState({

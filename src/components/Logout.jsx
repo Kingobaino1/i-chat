@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { BiPowerOff } from 'react-icons/bi';
 
