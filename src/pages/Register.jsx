@@ -44,6 +44,12 @@ const toastOptions = {
         toastOptions
       )
       return false
+    } else if (password.length < 3){
+      toast.error(
+        'Password is too short',
+        toastOptions
+      )
+      return false
     }
     return true;
   }
@@ -61,7 +67,6 @@ const toastOptions = {
         toast.error(data.message, toastOptions)
       }
       if(data.status === true) {
-        console.log(data)
         localStorage.setItem('i-chat-user', JSON.stringify(data.data));
         navigate('/');
       }

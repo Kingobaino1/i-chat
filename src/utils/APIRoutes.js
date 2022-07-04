@@ -1,5 +1,4 @@
 const host = 'https://i-chat-kings.herokuapp.com';
-
 const RegisterRoute = `${host}/api/auth/register`;
 const LoginRoute = `${host}/api/auth/login`;
 const SetAvatarRoute = `${host}/api/auth/setAvatar`;
